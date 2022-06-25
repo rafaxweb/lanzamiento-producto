@@ -1,0 +1,190 @@
+:root {
+    --light_blue: #f0f7f9;
+    --dark_blue: #0c5460ff;
+    --yellow: #FBAF00;
+
+}
+
+* {
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+body {
+    background-color: var(--light_blue);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--light_blue);
+}
+
+.header__img {
+    padding-top: 5px;
+    display: inline-block;
+    width: 25%;
+    min-width: 180px;
+}
+
+.header__img__img {
+    display: inline-block;
+    max-width: 180px;
+    padding: 10px;
+}
+
+.header__nav {
+    display: inline-block;
+    margin-top: 27px;
+    vertical-align: top;
+    text-align: right;
+    width: 60%;
+    font-size: 1.5em;
+    word-spacing: 1.5em;
+
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: var(--dark_blue);
+}
+
+main {
+    padding-top: 110px;
+}
+
+.main__form {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.main__form__text {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.main__form_buttom {
+    width: 150px;
+    color: var(--dark_blue);
+    background-color: var(--yellow);
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.main__form_buttom:hover {
+    color: var(--yellow);
+    background-color: var(--dark_blue);
+    cursor: pointer;
+}
+
+.main__div__video {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.main__section {
+    padding-top: 30px;
+}
+
+.main__section__caracteristicas {
+    max-width: 1000px;
+    padding-top: 20px;
+}
+
+.main__section__caracteristicas__icon {
+    display: inline-block;
+    width: 60px;
+    color: var(--light_blue);
+}
+
+.main__section__caracteristicas__info {
+    display: inline-block;
+    text-align: justify;
+    width: 80%;
+}
+
+.main__section__caracteristicas__info h3,
+.main__section__caracteristicas__info p {
+    text-align: left;
+}
+
+
+.main__section__pricecards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main__section__pricecards_card {
+    display: inline-block;
+    box-shadow: 2px 1px 5px;
+    border-radius: 5px;
+    margin: 10px;
+    max-width: 400px;
+    
+}
+
+.main__section__pricecards_card h3 {
+    background-color: #abdee5ff;
+    
+}
+
+.main__section__pricecards_card__buttom {
+    justify-self: center;
+    margin: 10px;
+    border: none;
+    background-color: var(--yellow);
+    height: 30px;
+    width: 100px;
+}
+
+.bold {
+    font-size: 2em;
+}
+
+footer {
+    background-color: #abdee5ff;
+}
+
+/* Media querrys */
+
+@media screen and (max-width: 720px) {
+
+    .header__img {
+        display: block;
+        max-width: 30vh;
+        margin: auto;
+    }
+
+    .header__img__img {
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    .header__nav a,
+    .header__nav {
+        display: block;
+        margin: auto;
+        padding: 2px 0px;
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 20px;
+    }
+
+    main {
+        padding-top: 150px;
+    }
+
+    .main__section__caracteristicas__icon {
+        width: 50px;
+    }
+
+    .main__section__caracteristicas__icon,
+    .main__section__caracteristicas__info {
+        display: block;
+    }
+}
